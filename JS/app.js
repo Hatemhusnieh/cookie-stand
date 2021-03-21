@@ -1,5 +1,6 @@
 'use strict';
 
+// creating Seattle object
 const Seattle = {
   Name : 'Pat’s Salmon Cookies',
   Location : 'Seattle',
@@ -9,6 +10,7 @@ const Seattle = {
   CustPerHour : 0,
   OpretaingHours: [6,7,8,9,10,11,12,1,2,3,4,5,6,7],
   dSales: [],
+  // create a function that generate a random custumer number
   randomCustPerHour : function(Min,Max)
   {
     Min = this.MinCust;
@@ -16,6 +18,7 @@ const Seattle = {
     this.CustPerHour = Math.floor(Math.random() * (Max - Min) + Min);
     return this.CustPerHour;
   } ,
+  // creating a function that generates an array hat represeant the sales per day
   sales : function()
   {
     let dailySales = [];
@@ -30,11 +33,13 @@ const Seattle = {
     // console.log(Total);
     return this.dSales= dailySales;
   },
+  // rendering elements on the site
   dispalySales: function(){
     const container = document.getElementById('body');
     const elChart = document.createElement('ul');
     elChart.textContent = `${this.Location} Sales this Day: `;
     container.appendChild(elChart);
+    // rendering a full list of cookies and when it were sold
     for(let i=0; i<this.OpretaingHours.length; i++)
     {
       const elDay = document.createElement('li');
@@ -51,7 +56,7 @@ Seattle.sales();
 Seattle.dispalySales();
 
 
-
+//creating  object
 const Tokyo = {
   Name : 'Pat’s Salmon Cookies',
   Location : 'Tokyo',
@@ -61,6 +66,7 @@ const Tokyo = {
   CustPerHour : 0,
   OpretaingHours: [6,7,8,9,10,11,12,1,2,3,4,5,6,7],
   dSales: [],
+  // create a function that generate a random custumer number
   randomCustPerHour : function(Min,Max)
   {
     Min = this.MinCust;
@@ -68,6 +74,7 @@ const Tokyo = {
     this.CustPerHour = Math.floor(Math.random() * (Max - Min) + Min);
     return this.CustPerHour;
   } ,
+  // creating a function that generates an array hat represeant the sales per day
   sales : function()
   {
     let dailySales = [];
@@ -82,11 +89,13 @@ const Tokyo = {
     // console.log(dailySales);
     return this.dSales= dailySales;
   },
+  // rendering elements on the site
   dispalySales: function(){
     const container = document.getElementById('body');
     const elChart = document.createElement('ul');
     elChart.textContent = `${this.Location} Sales this Day: `;
     container.appendChild(elChart);
+    // rendering a full list of cookies and when it were sold
     for(let i=0; i<this.OpretaingHours.length; i++)
     {
       const elDay = document.createElement('li');
@@ -102,6 +111,7 @@ Tokyo.sales();
 Tokyo.dispalySales();
 
 
+//creating Tokyo object
 const Dubai = {
   Name : 'Pat’s Salmon Cookies',
   Location : 'Dubai',
@@ -111,6 +121,7 @@ const Dubai = {
   CustPerHour : 0,
   OpretaingHours: [6,7,8,9,10,11,12,1,2,3,4,5,6,7],
   dSales: [],
+  // create a function that generate a random custumer number
   randomCustPerHour : function(Min,Max)
   {
     Min = this.MinCust;
@@ -118,6 +129,7 @@ const Dubai = {
     this.CustPerHour = Math.floor(Math.random() * (Max - Min) + Min);
     return this.CustPerHour;
   } ,
+  // creating a function that generates an array hat represeant the sales per day
   sales : function()
   {
     let dailySales = [];
@@ -132,11 +144,13 @@ const Dubai = {
     // console.log(dailySales);
     return this.dSales= dailySales;
   },
+  // rendering elements on the site
   dispalySales: function(){
     const container = document.getElementById('body');
     const elChart = document.createElement('ul');
     elChart.textContent = `${this.Location} Sales this Day: `;
     container.appendChild(elChart);
+    // rendering a full list of cookies and when it were sold
     for(let i=0; i<this.OpretaingHours.length; i++)
     {
       const elDay = document.createElement('li');
@@ -153,6 +167,7 @@ Dubai.sales();
 Dubai.dispalySales();
 
 
+//creating Paris object
 const Paris = {
   Name : 'Pat’s Salmon Cookies',
   Location : 'Paris',
@@ -162,6 +177,7 @@ const Paris = {
   CustPerHour : 0,
   OpretaingHours: [6,7,8,9,10,11,12,1,2,3,4,5,6,7],
   dSales: [],
+  // create a function that generate a random custumer number
   randomCustPerHour : function(Min,Max)
   {
     Min = this.MinCust;
@@ -169,6 +185,7 @@ const Paris = {
     this.CustPerHour = Math.floor(Math.random() * (Max - Min) + Min);
     return this.CustPerHour;
   } ,
+  // creating a function that generates an array hat represeant the sales per day
   sales : function()
   {
     let dailySales = [];
@@ -183,11 +200,13 @@ const Paris = {
     // console.log(dailySales);
     return this.dSales= dailySales;
   },
+  // rendering elements on the site
   dispalySales: function(){
     const container = document.getElementById('body');
     const elChart = document.createElement('ul');
     elChart.textContent = `${this.Location} Sales this Day: `;
     container.appendChild(elChart);
+    // rendering a full list of cookies and when it were sold
     for(let i=0; i<this.OpretaingHours.length; i++)
     {
       const elDay = document.createElement('li');
@@ -204,7 +223,7 @@ Paris.sales();
 Paris.dispalySales();
 
 
-
+//creating Lima object
 const Lima = {
   Name : 'Pat’s Salmon Cookies',
   Location : 'Lima',
@@ -214,6 +233,7 @@ const Lima = {
   CustPerHour : 0,
   OpretaingHours: [6,7,8,9,10,11,12,1,2,3,4,5,6,7],
   dSales: [],
+  // create a function that generate a random custumer number
   randomCustPerHour : function(Min,Max)
   {
     Min = this.MinCust;
@@ -221,6 +241,7 @@ const Lima = {
     this.CustPerHour = Math.floor(Math.random() * (Max - Min) + Min);
     return this.CustPerHour;
   } ,
+  // creating a function that generates an array hat represeant the sales per day
   sales : function()
   {
     let dailySales = [];
@@ -235,11 +256,13 @@ const Lima = {
     // console.log(dailySales);
     return this.dSales= dailySales;
   },
+  // rendering elements on the site
   dispalySales: function(){
     const container = document.getElementById('body');
     const elChart = document.createElement('ul');
     elChart.textContent = `${this.Location} Sales this Day: `;
     container.appendChild(elChart);
+    // rendering a full list of cookies and when it were sold
     for(let i=0; i<this.OpretaingHours.length; i++)
     {
       const elDay = document.createElement('li');
