@@ -3,18 +3,28 @@
     font-family: 'Ranchers', cursive;
     text-align: center;
     position: relative;
-    left: 20px;
-    right: 20px;
     top:20px;
     color: rgb(255, 102, 0);
 }
 #mainHeader img{
-    width: 450px;
-    height: 150px;
+    width: 420px;
+    height: 120px;
 }
 header{
     position: absolute;
     width: 100%;
-    height: 35%;
-    background-color: black;    
+    height: 35%;    
+}
+#logo{
+    position: absolute;
+    top: 9%;
+    left: -35px;
+    
+}
+#logo img{
+    width: 224px;
+    height: 130px;
+}
+body{
+    background-color: black;
 }
