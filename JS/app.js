@@ -1,7 +1,7 @@
 'use strict';
 
 // creating Seattle object
-const Seattle = {
+const seattle = {
   Name : 'Pat’s Salmon Cookies',
   Location : 'Seattle',
   MinCust : 23,
@@ -52,12 +52,12 @@ const Seattle = {
     elTotal.textContent = `Total cookies sold: ${this.Total}`;
   }
 };
-Seattle.sales();
-Seattle.dispalySales();
+seattle.sales();
+seattle.dispalySales();
 
 
 //creating  object
-const Tokyo = {
+const tokyo = {
   Name : 'Pat’s Salmon Cookies',
   Location : 'Tokyo',
   MinCust : 3,
@@ -107,12 +107,12 @@ const Tokyo = {
     elTotal.textContent = `Total cookies sold: ${this.Total}`;
   }
 };
-Tokyo.sales();
-Tokyo.dispalySales();
+tokyo.sales();
+tokyo.dispalySales();
 
 
 //creating Tokyo object
-const Dubai = {
+const dubai = {
   Name : 'Pat’s Salmon Cookies',
   Location : 'Dubai',
   MinCust : 11,
@@ -163,12 +163,12 @@ const Dubai = {
     elTotal.textContent = `Total cookies sold: ${this.Total}`;
   }
 };
-Dubai.sales();
-Dubai.dispalySales();
+dubai.sales();
+dubai.dispalySales();
 
 
 //creating Paris object
-const Paris = {
+const paris = {
   Name : 'Pat’s Salmon Cookies',
   Location : 'Paris',
   MinCust : 20,
@@ -219,12 +219,12 @@ const Paris = {
     elTotal.textContent = `Total cookies sold: ${this.Total}`;
   }
 };
-Paris.sales();
-Paris.dispalySales();
+paris.sales();
+paris.dispalySales();
 
 
 //creating Lima object
-const Lima = {
+const lima = {
   Name : 'Pat’s Salmon Cookies',
   Location : 'Lima',
   MinCust : 2,
@@ -275,5 +275,5 @@ const Lima = {
     elTotal.textContent = `Total cookies sold: ${this.Total}`;
   }
 };
-Lima.sales();
-Lima.dispalySales();
+lima.sales();
+lima.dispalySales();
