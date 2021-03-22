@@ -1,8 +1,46 @@
+
+#slalesSite{
+    background-color: white;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(255, 0, 0)),
+                  url("../../media/examples/lizard.png");
+}
+
+#sales{
+    font-size: 2rem;
+    color: rgb(255, 102, 0);
+    margin: 5px;
+    position: static;
+ }
+ 
+ .salesTable{
+     font-size: 1.2rem;
+     color:black;
+     margin: 5px;
+     position: static;
+     border-collapse: collapse;  
+ }
+
+ table , th, td{
+     border-collapse: collapse;
+     text-indent: initial;
+     border-spacing: 2px;
+     background-color: rgb(227, 252, 0);
+     border: groove rgb(255, 102, 0);
+     padding: 5px;
+     border-radius: 50px;
+ }
+
+ th{
+     font-weight: bold;
+     font-family:'Chango', cursive;
+     color: rgb(255, 38, 0);
+ }
 .standard {
     font-family: Arial sans-serif;
     color: white;
     font-size: 1rem;
 }
+
 #mainHeader{
     font-size: 2.5rem;
     font-family: 'Ranchers', cursive;
@@ -11,64 +49,47 @@
     top:20px;
     color: rgb(255, 102, 0);
 }
+
 #mainHeader img{
     width: 420px;
     height: 120px;
 }
+
 header{
     position: absolute;
     width: 100%;
     height: 35%;    
 }
+
 #logo{
     position: absolute;
     top: 9%;
     left: -35px;
     
 }
+
 #logo img{
     width: 224px;
     height: 130px;
 }
+
 body{
     background-color: black;
 }
+
 .highLight{
     font-family: 'Averia Serif Libre', cursive;
     color: rgb(0, 248, 248);
     font-size: 1.5rem;
 }
 
-#sales{
-   font-size: 2rem;
-   color: rgb(255, 102, 0);
-   margin: 5px;
-   position: static;
+
+#salesLink {
+    position: relative;
+    top: 100px;
+    border: thick double #b15930;
+    width: 35px;
+    padding: 5px;
+    background-color: #e9e506;
 }
 
-.salesTable{
-    font-size: 1rem;
-    color:black;
-    margin: 5px;
-    position: static;
-    border-collapse: collapse;
-    
-}
-table , th, td{
-    border-collapse: collapse;
-    text-indent: initial;
-    border-spacing: 2px;
-    background-color: rgb(227, 252, 0);
-    border: thick double black;
-    padding: 5px;
-}
-th{
-    font-weight: bold;
-    font-family:'Chango', cursive;;
-}
-a {
-    text-decoration:underline;
-    outline:none;
-    color: white;
-    z-index: 1000;
-}
