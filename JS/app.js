@@ -37,12 +37,14 @@ const seattle = {
   dispalySales: function(){
     const container = document.getElementById('body');
     const elChart = document.createElement('ul');
+    elChart.setAttribute('class','highLight');
     elChart.textContent = `${this.Location} Sales this Day: `;
     container.appendChild(elChart);
     // rendering a full list of cookies and when it were sold
     for(let i=0; i<this.OpretaingHours.length; i++)
     {
       const elDay = document.createElement('li');
+      elDay.setAttribute('class','srandard');
       elChart.appendChild(elDay);
       elDay.textContent = `${this.OpretaingHours[i]}am: ${this.dSales[i]} cookies
       `;
@@ -93,12 +95,14 @@ const tokyo = {
   dispalySales: function(){
     const container = document.getElementById('body');
     const elChart = document.createElement('ul');
+    elChart.setAttribute('class','highLight');
     elChart.textContent = `${this.Location} Sales this Day: `;
     container.appendChild(elChart);
     // rendering a full list of cookies and when it were sold
     for(let i=0; i<this.OpretaingHours.length; i++)
     {
       const elDay = document.createElement('li');
+      elDay.setAttribute('class','srandard');
       elChart.appendChild(elDay);
       elDay.textContent = `${this.OpretaingHours[i]}am: ${this.dSales[i]} cookies`;
     }
@@ -148,12 +152,14 @@ const dubai = {
   dispalySales: function(){
     const container = document.getElementById('body');
     const elChart = document.createElement('ul');
+    elChart.setAttribute('class','highLight');
     elChart.textContent = `${this.Location} Sales this Day: `;
     container.appendChild(elChart);
     // rendering a full list of cookies and when it were sold
     for(let i=0; i<this.OpretaingHours.length; i++)
     {
       const elDay = document.createElement('li');
+      elDay.setAttribute('class','srandard');
       elChart.appendChild(elDay);
       elDay.textContent = `${this.OpretaingHours[i]}am: ${this.dSales[i]} cookies
       `;
@@ -204,12 +210,14 @@ const paris = {
   dispalySales: function(){
     const container = document.getElementById('body');
     const elChart = document.createElement('ul');
+    elChart.setAttribute('class','highLight');
     elChart.textContent = `${this.Location} Sales this Day: `;
     container.appendChild(elChart);
     // rendering a full list of cookies and when it were sold
     for(let i=0; i<this.OpretaingHours.length; i++)
     {
       const elDay = document.createElement('li');
+      elDay.setAttribute('class','srandard');
       elChart.appendChild(elDay);
       elDay.textContent = `${this.OpretaingHours[i]}am: ${this.dSales[i]} cookies
       `;
@@ -260,12 +268,14 @@ const lima = {
   dispalySales: function(){
     const container = document.getElementById('body');
     const elChart = document.createElement('ul');
+    elChart.setAttribute('class','srandard');
     elChart.textContent = `${this.Location} Sales this Day: `;
     container.appendChild(elChart);
     // rendering a full list of cookies and when it were sold
     for(let i=0; i<this.OpretaingHours.length; i++)
     {
       const elDay = document.createElement('li');
+      elDay.setAttribute('class','srandard');
       elChart.appendChild(elDay);
       elDay.textContent = `${this.OpretaingHours[i]}am: ${this.dSales[i]} cookies
       `;
