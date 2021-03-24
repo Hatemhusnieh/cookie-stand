@@ -1,131 +1,67 @@
-tr:hover{
-    color: rgb(255, 102, 0);
-    background-color: rgb(0, 248, 248);
- }
-#slalesSite{
-    background-color: white;
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(255, 0, 0)),
-                  url("../../media/examples/lizard.png");
+/* index page CSS */
+/* General */
+body{
+    background-image: url(../img/body.jpg);
+    background-repeat: repeat;
 }
 
-#sales{
-    font-size: 2rem;
-    color: rgb(255, 102, 0);
-    margin: 5px;
-    position: static;
- }
-
-.salesTable{
-     font-size: 1.2rem;
-     color:black;
-     margin: 5px;
-     position: static;
-     border-collapse: collapse;  
- }
-table , tr , th, td{
-     border-collapse: collapse;
-     text-indent: initial;
-     border-spacing: 2px;
-     background-color: rgb(227, 252, 0);
-     border: groove rgb(255, 102, 0);
-     padding: 5px;
-     border-radius: 50px;
- }
- th{
-     font-weight: bold;
-     font-family:'Chango', cursive;
-     color: rgb(255, 38, 0);
- }
-#salesForm{
-    font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: brown;
-    background-color: rgb(227, 252, 0);
-    border-radius: 10%;
-}
-legend{
-    color: rgb(255, 0, 0);
-    padding: 5px;
-    background-color: rgb(206, 142, 142);
-    border-radius: 15%;
-}
-#submito{
-    position: relative;
-    left: 650px;
-    top: -209px;
-    width: 141px;
-    height: 105px;
-    font-size: 3rem;
-    font-family: 'Chango';
-    color: red;
-    background-color: rgb(255, 102, 0);
-}
- 
+/* Header */
 .standard {
     font-family: Arial sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
 }
 
-#mainHeader{
-    font-size: 2.5rem;
-    font-family: 'Ranchers', cursive;
-    text-align: center;
-    position: relative;
-    top:20px;
-    color: rgb(255, 102, 0);
-}
-
-#mainHeader img{
-    width: 420px;
-    height: 120px;
-}
-
 header{
+    background-image: url(https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center;
     position: absolute;
     width: 100%;
     height: 35%;    
 }
 
+#mainHeader{
+    font-size: 3rem;
+    font-family: 'Ranchers', cursive;
+    text-align: center;
+    position: relative;
+    top:30px;
+    color: rgb(255, 102, 0);
+}
+
 #logo{
     position: absolute;
-    top: 9%;
-    left: -35px;
-    
+    top: 0%;
+    left: -31px;    
 }
 
 #logo img{
-    width: 224px;
-    height: 130px;
+    width: 165px;
+    height: 100px;
 }
 
-.highLight{
-    font-family: 'Averia Serif Libre', cursive;
-    color: rgb(0, 248, 248);
-    font-size: 1.5rem;
-}
+/* main */
 
-body{
-    background-color: rgb(5, 5, 5);
-}
+/* navigation bar */
 
 nav{
-    display: block;
     font-size: 1.5rem;
-    color: coral;
+    color: rgb(255, 102, 0);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    position: relative;
+    position:fixed;
     top: 150px;
     border: 3mm ridge yellow;
     width: 20%;
-    /* background-color: yellow; */
 }
 
 nav li{
     margin: 30px;
     list-style-type: "\1F449"; /* pointing sign */
 }
+
 #reach:hover{
     background-color: rgb(0, 255, 64);
     color: rgb(255, 102, 0);
@@ -141,7 +77,6 @@ nav li{
 }
 #reach:hover + #hidden1{
     display: inline-block;
-    color: rgb(0, 0, 0);
 }
 li a{
     border: thick double coral;
@@ -152,16 +87,8 @@ li a:hover{
     background-color: rgb(0, 255, 64);
     transition: 500ms;
 }
-.salesPage a{
-    border: thick double coral;
-    color: rgb(252, 252, 252);
-    text-decoration: none;
-}
-.salesPage a:hover{
-    background-color: rgb(0, 255, 64);
-    color:rgb(255, 102, 0) ;
-    transition: 500ms;
-}
+
+/* Images */
 
 .images{
     display: flex;
@@ -172,12 +99,10 @@ li a:hover{
     left: 300px;
     border: 2px solid rgb(255, 102, 0);
     border-radius: 10%;
-    
 }
 .images img{
     border: 2px solid  #e9e506 ;
-    border-radius: 100%;
-    
+    border-radius: 100%; 
 }
 #chinook{
     width: 48%;
@@ -199,3 +124,101 @@ li a:hover{
 #fish{
     width: 30%;
 }
+
+
+/* Sales page CSS */
+/* Header */
+#slalesSite{
+    background-color: white;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(255, 0, 0)),
+                  url("../../media/examples/lizard.png");
+}
+
+#sales{
+    font-size: 2rem;
+    color: rgb(255, 102, 0);
+    margin: 5px;
+    position: static;
+ }
+
+.salesTable{
+     font-size: 1.2rem;
+     color:black;
+     margin: 5px;
+     position: static;
+     border-collapse: collapse;  
+ }
+
+ /* JavaScript content */
+ /* Fixed Content */
+ .salesPage a{
+    border: thick double coral;
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+}
+.salesPage a:hover{
+    background-color: rgb(0, 255, 64);
+    color:rgb(255, 102, 0) ;
+    transition: 500ms;
+}
+
+#salesForm{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    background-color: rgb(227, 252, 0);
+    border-radius: 10%;
+}
+
+
+tr:hover{
+    color: rgb(255, 102, 0);
+    background-color: rgb(0, 248, 248);
+ }
+
+
+
+table , tr , th, td{
+     border-collapse: collapse;
+     text-indent: initial;
+     border-spacing: 2px;
+     background-color: rgb(227, 252, 0);
+     border: groove rgb(255, 102, 0);
+     padding: 5px;
+     border-radius: 50px;
+ }
+ th{
+     font-weight: bold;
+     font-family:'Chango', cursive;
+     color: rgb(255, 38, 0);
+ }
+
+ /* Dynamic content */
+legend{
+    color: rgb(255, 0, 0);
+    padding: 5px;
+    background-color: rgb(206, 142, 142);
+    border-radius: 15%;
+}
+#submito{
+    position: relative;
+    left: 650px;
+    top: -209px;
+    width: 141px;
+    height: 105px;
+    font-size: 3rem;
+    font-family: 'Chango';
+    color: red;
+    background-color: rgb(255, 102, 0);
+}
+ 
+
+.highLight{
+    font-family: 'Averia Serif Libre', cursive;
+    color: rgb(0, 248, 248);
+    font-size: 1.5rem;
+}
+
+
+
+
