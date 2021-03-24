@@ -1,7 +1,11 @@
 'use strict';
-// defining shared operationg hours
-const opretaingHours = [6,7,8,9,10,11,12,1,2,3,4,5,6,7];
-// createing Constructor Function:
+// defining shared operating hours
+const operatingHours = [6,7,8,9,10,11,12,1,2,3,4,5,6,7];
+// creating a variable to hold new object that user add
+let newLocationSales = [];
+// create variable to define newLocationSales index
+let index=0;
+// creating Constructor Function:
 function PatShop(name,location,minimumCustomers,maximumCutomers,averageSales){
   // creating properties for Object
   this.Name = name;
@@ -15,8 +19,6 @@ function PatShop(name,location,minimumCustomers,maximumCutomers,averageSales){
 let totals = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 // Creating a variable that will hold the total sales of all locations
 let totalOSold = 0;
-// Creating a variable that will hold the total sales of all Locations totals
-let locationTotals=0;
 // defining tables constants as global variables
 let elTable;
 // Creating a Table
@@ -33,12 +35,12 @@ function table(){
   const elTh1 = document.createElement('th');
   elTh1.textContent = ' ';
   elRow1.appendChild(elTh1);
-  for(let i=0; i<opretaingHours.length; i++){
+  for(let i=0; i<operatingHours.length; i++){
     const elTh = document.createElement('th');
     if (i<6) {
-      elTh.textContent = `${opretaingHours[i]} am`;
+      elTh.textContent = `${operatingHours[i]} am`;
     } else {
-      elTh.textContent = `${opretaingHours[i]} pm`;
+      elTh.textContent = `${operatingHours[i]} pm`;
     }
     elRow1.appendChild(elTh);
   }
@@ -47,7 +49,7 @@ function table(){
   elRow1.appendChild(elTdTotal);
 }
 table();
-// Attatching Functions to Object
+// Attaching Functions to Object
 // Creating Random Customer per/hour
 PatShop.prototype.randomCustPerHour = function(Min,Max){
   Min = this.MinCust;
@@ -56,11 +58,11 @@ PatShop.prototype.randomCustPerHour = function(Min,Max){
   return this.CustPerHour;
 };
 
-// Creating and attatching a function that generates an array hat represeant the sales per day
+// Creating and attaching a function that generates an array hat represent the sales per day
 PatShop.prototype.sales = function(){
   let dailySales = [];
   this.total = 0;
-  for(let i=0; i<opretaingHours.length; i++)
+  for(let i=0; i<operatingHours.length; i++)
   {
     this.randomCustPerHour();
     // console.log(this.CustPerHour);
@@ -72,22 +74,22 @@ PatShop.prototype.sales = function(){
 };
 
 // Rendering elements on the site
-PatShop.prototype.dispalySales = function(){
+PatShop.prototype.displaySales = function(){
   // const container = document.getElementById('body');
   // const elChart = document.createElement('ul');
   // elChart.setAttribute('class','highLight');
   // elChart.textContent = `${this.Location} Sales this Day: `;
   // container.appendChild(elChart);
   // // rendering a full list of cookies and when it were sold
-  // for(let i=0; i<opretaingHours.length; i++)
+  // for(let i=0; i<operatingHours.length; i++)
   // {
   //   const elDay = document.createElement('li');
   //   elDay.setAttribute('class','standard');
   //   elChart.appendChild(elDay);
   //   if (i<6) {
-  //     elDay.textContent = `${opretaingHours[i]} am: ${this.dailySales[i]} cookies`;
+  //     elDay.textContent = `${operatingHours[i]} am: ${this.dailySales[i]} cookies`;
   //   } else {
-  //     elDay.textContent = `${opretaingHours[i]} pm: ${this.dailySales[i]} cookies`;
+  //     elDay.textContent = `${operatingHours[i]} pm: ${this.dailySales[i]} cookies`;
   //   }
   // }
   // const elTotal = document.createElement('li');
@@ -102,57 +104,57 @@ PatShop.prototype.dispalySales = function(){
   elTh.textContent = this.Location;
   elRow.appendChild(elTh);
   let locTotal = 0;
-  for(let i=0; i<opretaingHours.length; i++){
+  for(let i=0; i<operatingHours.length; i++){
     const elTd = document.createElement('td');
     elTd.textContent = this.dailySales[i];
     elRow.appendChild(elTd);
     // calculating Location Totals
     locTotal+=this.dailySales[i];
     totals[i]+=this.dailySales[i];
-    locationTotals+=totals[i];
   }
   totalOSold+=locTotal;
   const elTotal = document.createElement('td');
   elTotal.textContent = locTotal;
   elRow.appendChild(elTotal);
 };
-// Programm ENDS !!!!!!
+// Programme ENDS !!!!!!
 
 
 
 // creating Seattle object
 const seattle = new PatShop('Pat’s Salmon Cookies','Seattle',23,65,6.3);
-// diplaying Seattle data
+// displaying Seattle data
 seattle.sales();
-seattle.dispalySales();
+seattle.displaySales();
 
 // creating Tokyo object
 const tokyo = new PatShop('Pat’s Salmon Cookies','Tokyo',3,24,1.2);
-// diplaying Tokyo data
+// displaying Tokyo data
 tokyo.sales();
-tokyo.dispalySales();
+tokyo.displaySales();
 
 // creating Dubai object
 const dubai = new PatShop('Pat’s Salmon Cookies','Dubai',11,38,3.7);
-// diplaying Dubai data
+// displaying Dubai data
 dubai.sales();
-dubai.dispalySales();
+dubai.displaySales();
 
 // creating Paris object
 const paris = new PatShop('Pat’s Salmon Cookies','Paris',11,38,3.7);
-// diplaying Paris data
+// displaying Paris data
 paris.sales();
-paris.dispalySales();
+paris.displaySales();
 
 // creating Lima object
 const lima = new PatShop('Pat’s Salmon Cookies','Lima',11,38,3.7);
-// diplaying Lima data
+// displaying Lima data
 lima.sales();
-lima.dispalySales();
+lima.displaySales();
 
 // creating footer function and location totals
 function footerTable(){
   const elTdHourly = document.createElement('tr');
+  elTdHourly.setAttribute('id','tableFooter');
   elTable.appendChild(elTdHourly);
   const elTdHourlyTotals = document.createElement('th');
   elTdHourlyTotals.textContent = 'Location Totals';
@@ -163,7 +165,34 @@ function footerTable(){
     elTdHourly.appendChild(elTdHourlyValue);
   }
   const elTotalOfTotals = document.createElement('th');
-  elTotalOfTotals.textContent = totalOSold+locationTotals;
+  elTotalOfTotals.textContent = totalOSold;
   elTdHourly.appendChild(elTotalOfTotals);
 }
 footerTable();
+
+// processing user data and inputting the result on the browser
+let salesForm = document.getElementById('salesForm');
+salesForm.addEventListener('submit',createSales);
+// Crating a function to process user data
+function createSales(event){
+  event.preventDefault();
+  // assigning variables for each user inputs
+  let location = event.target.location.value;
+  let miniCust =Number(event.target.miniCust.value);
+  let MaxCust = Number(event.target.maxCust.value);
+  let averageSales = Number(event.target.averageSales.value);
+  // pushing user input on newLocationSales array
+  newLocationSales.push(new PatShop('Pat’s Salmon Cookies',location,miniCust,MaxCust,averageSales));
+  newLocationSales[index].sales();
+  newLocationSales[index].displaySales();
+  // deleting the last row when add is pressed
+  if (newLocationSales) {
+    let remove = document.getElementById('tableFooter');
+    let container0 = remove.parentNode;
+    container0.removeChild(remove);
+  }
+  index += 1;
+  // displaying the last row again
+  footerTable();
+  salesForm.reset('');
+}
