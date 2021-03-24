@@ -18,6 +18,22 @@
         <div id='body'></div>
         <a href="./index.html">Main page</a>
     </main>
-    <footer></footer>
+    <footer>
+        <!-- Adding a form for the user -->
+        <form id="salesForm">
+            <fieldset>
+                <legend>Pats Salmon Cookies</legend>
+                <label for="location">Location:</label> 
+                    <input type="text" name="location" id="location"> <br><br>
+                <label for="miniCust">Minimum Visitors:</label>
+                    <input type="number" name="miniCust" id="miniCust" min="0"><br><br>
+                <label for="maxCust">Maximum Visitors</label>
+                    <input type="number" name="maxCust" id="maxCust" min="0"><br><br>
+                <label for="averageSales">Average Sales per Customer</label>
+                    <input type="number" name="averageSales" id="averageSales" min="1" step="any"> <br><br>
+                <input type="submit" value="Add" id="submito">
+            </fieldset>
+        </form>
+    </footer>
 </body>
 </html>
