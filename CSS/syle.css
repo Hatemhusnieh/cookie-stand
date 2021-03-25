@@ -1,10 +1,12 @@
 /* index page CSS */
 /* General */
-body{
+#bodyMain{
     background-image: url(../img/body.jpg);
     background-repeat: repeat;
 }
-
+b{
+    font-weight: bold;
+}
 /* Header */
 .standard {
     font-family: Arial sans-serif;
@@ -12,7 +14,7 @@ body{
     font-size: 1rem;
 }
 
-header{
+#headerMain{
     background-image: url(https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png);
     background-repeat: no-repeat;
     background-size: 500px;
@@ -51,36 +53,193 @@ nav{
     color: rgb(255, 102, 0);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    position:fixed;
+    position:relative;
     top: 150px;
     border: 3mm ridge yellow;
     width: 20%;
+    height: 978px;
 }
 
 nav li{
     margin: 30px;
     list-style-type: "\1F449"; /* pointing sign */
 }
-
+ #reach a{
+    text-decoration: none;
+    color: rgb(255, 102, 0);
+}
 #reach:hover{
     background-color: rgb(0, 255, 64);
     color: rgb(255, 102, 0);
     transition: 1500ms;
-    cursor:no-drop;
+    cursor: pointer;
 }
-#hidden1{
-    display: none;
-    font-family: Arial, Helvetica, sans-serif;
+
+/* Location CSS */
+#body{
+    background-image: url(/img/reach.jpg);
+    background-repeat: repeat;
+
+}
+h1{
+    font-size: 4rem;
+    color: rgb(255, 102, 0);
+    font-weight: bold;
+    font-family: 'Ranchers', cursive;
+    text-align: center;
+    position: relative;
+    top: 32px;
+}
+#stores{
+    text-decoration: none;
+    color: rgb(255, 102, 0);
+    font-size: 2.5rem;
+    font-family: 'Ranchers', cursive;
+    position: relative;
+    left: 630px;
+    top: 52px;
+    font-weight: bold;
+}
+#stores:hover{
+    background-color: rgb(0, 255, 64);
+    color: rgb(255, 102, 0);
+    transition: 1500ms;
+    cursor: pointer;
+}
+#reach-us{
+    position: relative;
+    left: 206px;
+    top: 95px;
+    width: 70%;
+}
+
+iframe{
+    width: 400px;
+    height: 300px;
+    border: 1px solid rgb(255, 102, 0);
+    border-radius: 15%;
+    position: relative;
+    top: 200px;
+    left: 50px;
+}
+tr #coming{
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+#neu{
+    background-image: url(/img/com.jpg);
+    background-position: center;
+}
+/* /////////////////////////////////////////////////*/
+
+/* oprating hours */
+#operating a{
+    text-decoration: none;
+    color: rgb(255, 102, 0);
+}
+#OpeHour:hover{
+    background-color: rgb(0, 255, 64);
+    color: rgb(255, 102, 0);
+    transition: 1500ms;
+    cursor: pointer;
+}
+#operatingMain h1{
+    color: rgb(0, 255, 64);
+} 
+#operating:hover{
+    background-color: rgb(0, 255, 64);
+    color: rgb(255, 102, 0);
+    transition: 1500ms;
+    cursor: pointer;
+}
+#operatingMain{
+    background-image: url(/img/oprating.png);
+    background-size: 35%;
+    background-repeat: repeat;
+}
+#operatingTable{
+    width: 86%;
+    height: 242px;
+    position: relative;
+    top: 140px;
+    left: 96px;
+    text-align: center;
+}
+#OpeHour{
+    text-decoration: none;
+    color: rgb(255, 102, 0);
+    font-size: 2.5rem;
+    font-family: 'Ranchers', cursive;
+    position: relative;
+    left: 630px;
+    top: 73px;
+    font-weight: bold;
+}
+/* ///////////////////////////////////////////////*/
+
+/* Contact */
+#contacMain{
+    background-image: url(/img/contact.jpg);
+    background-repeat: repeat;
+}
+#conatct a{
+    text-decoration: none;
+    color: rgb(255, 102, 0);
+}
+#conatct:hover{
+    background-color: rgb(0, 255, 64);
+    color: rgb(255, 102, 0);
+    transition: 1500ms;
+    cursor: pointer;
+}
+#cont{
+    text-decoration: none;
+    color: rgb(255, 102, 0);
     font-size: 2rem;
-    color: lightblue;
-    background-color: darkred;
+    font-family: 'Ranchers', cursive;
+    position: relative;
+    left: 630px;
+    top: 73px;
+    font-weight: bold;
+}  
+#cont:hover{
+    background-color: rgb(0, 255, 64);
+    transition: 1500ms;
+    cursor: pointer; 
 }
-#reach:hover + #hidden1{
-    display: inline-block;
+a + ul{
+    font-size: 2rem;
+    font-family: 'Ranchers', cursive;
+    color: rgb(3, 224, 240);
+    position: relative;
+    left: 90px;
+    top: 124px;
+    line-height: 77px;
+    list-style-type: "\1F496";
+    width: 320px;
 }
-li a{
-    border: thick double coral;
-    color: coral;
+ol li{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: rgba(3, 224, 240, 0.37);
+    line-height: 33px;
+    list-style-type: upper-roman;
+    text-indent: 4px;
+    position: relative;
+    left: 130px;
+    padding-inline-start: 40px;
+}
+.listo{
+    color: rgb(8, 8, 8);
+    background-color: rgba(3, 224, 240, 0.37);
+}
+/* //////////////////////////////////////////// */
+nav li #link{
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 li a:hover{
@@ -124,14 +283,13 @@ li a:hover{
 #fish{
     width: 30%;
 }
-
+/* ////////////////////////////////////////////////////////////// */
 
 /* Sales page CSS */
 /* Header */
 #slalesSite{
-    background-color: white;
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(255, 0, 0)),
-                  url("../../media/examples/lizard.png");
+    background-image: url(/img/sales.png);
+    background-repeat: repeat;
 }
 
 #sales{
@@ -142,19 +300,27 @@ li a:hover{
  }
 
 .salesTable{
-     font-size: 1.2rem;
-     color:black;
-     margin: 5px;
-     position: static;
-     border-collapse: collapse;  
+    font-size: 1.2rem;
+    color:black;
+    margin: 5px;
+    position: static;
+    border-collapse: collapse;
+    width: 79%;
+    position: relative;
+    top: 85px;
+    left: 113px;  
  }
 
  /* JavaScript content */
  /* Fixed Content */
  .salesPage a{
-    border: thick double coral;
-    color: rgb(252, 252, 252);
+    color: rgb(255, 102, 0);
     text-decoration: none;
+    font-size: 2.5rem;
+    font-family: 'Ranchers', cursive;
+    position: relative;
+    left: 580px;
+    top: 52px;
 }
 .salesPage a:hover{
     background-color: rgb(0, 255, 64);
@@ -168,6 +334,11 @@ li a:hover{
     color: brown;
     background-color: rgb(227, 252, 0);
     border-radius: 10%;
+    width: 50%;
+    height: 241px;
+    position: relative;
+    top: 100px;
+    left: 281px;
 }
 
 
@@ -179,20 +350,20 @@ tr:hover{
 
 
 table , tr , th, td{
-     border-collapse: collapse;
-     text-indent: initial;
-     border-spacing: 2px;
-     background-color: rgb(227, 252, 0);
-     border: groove rgb(255, 102, 0);
-     padding: 5px;
-     border-radius: 50px;
+    border-collapse: collapse;
+    text-indent: initial;
+    border-spacing: 2px;
+    background-color: rgb(227, 252, 0);
+    border: groove rgb(255, 102, 0);
+    padding: 5px;
+    border-radius: 50px;   
  }
  th{
      font-weight: bold;
      font-family:'Chango', cursive;
      color: rgb(255, 38, 0);
  }
-
+/* //////////////////////////////////////////////////////////////////////// */
  /* Dynamic content */
 legend{
     color: rgb(255, 0, 0);
@@ -202,23 +373,42 @@ legend{
 }
 #submito{
     position: relative;
-    left: 650px;
-    top: -209px;
-    width: 141px;
-    height: 105px;
-    font-size: 3rem;
-    font-family: 'Chango';
+    left: 523px;
+    top: -145px;
+    width: 119px;
+    height: 75px;
+    font-size: 2rem;
+    font-family: Chango;
     color: red;
-    background-color: rgb(255, 102, 0);
+    background-color: rgb(227, 252, 0);
+    border: none;
 }
- 
-
-.highLight{
-    font-family: 'Averia Serif Libre', cursive;
-    color: rgb(0, 248, 248);
-    font-size: 1.5rem;
+#submito:hover{
+    cursor: pointer;
+    background-color: rgb(0, 255, 64);
+    transition: 2000ms;
 }
 
+#location{
+    position: relative;
+    left: 214px;
+}
+#miniCust{
+    position: relative;
+    left: 122px;
+}
+#maxCust{
+    position: relative;
+    left: 117px;
+}
+#averageSales{
+    position: relative;
+}
 
+legend{
+    ;
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
 
 

@@ -1,6 +1,6 @@
 'use strict';
 // defining shared operating hours
-const operatingHours = [6,7,8,9,10,11,12,1,2,3,4,5,6,7];
+const operatingHours = [6,7,8,9,10,11,12,1,2,3,4,5,6,7,8];
 // creating a variable to hold new object that user add
 let newLocationSales = [];
 // create variable to define newLocationSales index
@@ -16,7 +16,7 @@ function PatShop(name,location,minimumCustomers,maximumCutomers,averageSales){
 }
 
 // Creating a variable that will hold the hourly total
-let totals = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+let totals = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 // Creating a variable that will hold the total sales of all locations
 let totalOSold = 0;
 // defining tables constants as global variables
@@ -54,7 +54,7 @@ table();
 PatShop.prototype.randomCustPerHour = function(Min,Max){
   Min = this.MinCust;
   Max = this.MaxCust;
-  this.CustPerHour = Math.floor(Math.random() * (Max - Min) + Min);
+  this.CustPerHour = Math.round(Math.random() * (Max - Min) + Min);
   return this.CustPerHour;
 };
 
@@ -75,27 +75,6 @@ PatShop.prototype.sales = function(){
 
 // Rendering elements on the site
 PatShop.prototype.displaySales = function(){
-  // const container = document.getElementById('body');
-  // const elChart = document.createElement('ul');
-  // elChart.setAttribute('class','highLight');
-  // elChart.textContent = `${this.Location} Sales this Day: `;
-  // container.appendChild(elChart);
-  // // rendering a full list of cookies and when it were sold
-  // for(let i=0; i<operatingHours.length; i++)
-  // {
-  //   const elDay = document.createElement('li');
-  //   elDay.setAttribute('class','standard');
-  //   elChart.appendChild(elDay);
-  //   if (i<6) {
-  //     elDay.textContent = `${operatingHours[i]} am: ${this.dailySales[i]} cookies`;
-  //   } else {
-  //     elDay.textContent = `${operatingHours[i]} pm: ${this.dailySales[i]} cookies`;
-  //   }
-  // }
-  // const elTotal = document.createElement('li');
-  // elChart.appendChild(elTotal);
-  // elTotal.textContent = `Total cookies sold: ${this.Total}`;
-
   // adding on the table
   const elRow = document.createElement('tr');
   elRow.setAttribute('id',`${this.Location}`);
@@ -159,7 +138,7 @@ function footerTable(){
   const elTdHourlyTotals = document.createElement('th');
   elTdHourlyTotals.textContent = 'Location Totals';
   elTdHourly.appendChild(elTdHourlyTotals);
-  for(let i=0; i<14; i++){
+  for(let i=0; i<operatingHours.length; i++){
     const elTdHourlyValue = document.createElement('th');
     elTdHourlyValue.textContent = totals[i];
     elTdHourly.appendChild(elTdHourlyValue);
