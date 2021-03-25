@@ -77,7 +77,7 @@ nav li{
 
 /* Location CSS */
 #body{
-    background-image: url(/img/reach.jpg);
+    background-image: url(../img/reach.jpg);
     background-repeat: repeat;
 
 }
@@ -129,7 +129,7 @@ tr #coming{
     font-weight: bolder;
 }
 #neu{
-    background-image: url(/img/com.jpg);
+    background-image: url(../img/com.jpg);
     background-position: center;
 }
 /* /////////////////////////////////////////////////*/
@@ -155,7 +155,7 @@ tr #coming{
     cursor: pointer;
 }
 #operatingMain{
-    background-image: url(/img/oprating.png);
+    background-image: url(../img/oprating.png);
     background-size: 35%;
     background-repeat: repeat;
 }
@@ -181,7 +181,7 @@ tr #coming{
 
 /* Contact */
 #contacMain{
-    background-image: url(/img/contact.jpg);
+    background-image: url(../img/contact.jpg);
     background-repeat: repeat;
 }
 #conatct a{
@@ -288,7 +288,7 @@ li a:hover{
 /* Sales page CSS */
 /* Header */
 #slalesSite{
-    background-image: url(/img/sales.png);
+    background-image: url(../img/sales.png);
     background-repeat: repeat;
 }
 
