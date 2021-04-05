@@ -6,12 +6,12 @@ let newLocationSales = [];
 // create variable to define newLocationSales index
 let index=0;
 // creating Constructor Function:
-function PatShop(name,location,minimumCustomers,maximumCutomers,averageSales){
+function PatShop(name,location,minimumCustomers,maximumCustomers,averageSales){
   // creating properties for Object
   this.Name = name;
   this.Location = location;
   this.MinCust = minimumCustomers;
-  this.MaxCust = maximumCutomers;
+  this.MaxCust = maximumCustomers;
   this.AvgCookieSale = averageSales;
 }
 
@@ -38,9 +38,9 @@ function table(){
   for(let i=0; i<operatingHours.length; i++){
     const elTh = document.createElement('th');
     if (i<6) {
-      elTh.textContent = `${operatingHours[i]} am`;
+      elTh.textContent = `${operatingHours[i]}:00 am`;
     } else {
-      elTh.textContent = `${operatingHours[i]} pm`;
+      elTh.textContent = `${operatingHours[i]}:00 pm`;
     }
     elRow1.appendChild(elTh);
   }
