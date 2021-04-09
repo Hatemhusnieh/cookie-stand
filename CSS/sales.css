@@ -1,0 +1,163 @@
+/* Header */
+header{
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    position: fixed;
+    z-index: 200;
+    background-color: rgb(0, 0, 0);
+}
+.nav-scroll{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    position: fixed;
+    z-index: 200; 
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 1px 10px rgb(255, 102, 0);
+}
+#logo{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+#logo img{
+    width: 55px;
+    height: 55px;
+}
+#logo h4{
+    position: relative;
+    top: 19px;
+    font-family: 'Ranchers', cursive;
+    color: rgb(255, 102, 0);
+}
+
+/* navigation bar */
+
+nav{
+    color: rgb(255, 102, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: fit-content;
+    float: right;
+    position: relative;
+    top: -51px;
+    left: auto;
+    right: 10px;
+    font-size: 16pt
+}
+
+ nav ul{
+    list-style: none;
+    display: flex;
+ }
+nav li{
+    margin: 13px;
+}
+ li a{
+    text-decoration: none;
+    color: rgb(255, 102, 0);
+    cursor: pointer;
+}
+li:hover{
+    list-style-type: "\1F449";
+}
+li a:hover{
+    background-color: rgb(255, 102, 0);
+    color: white;
+    border-radius: 6px;
+    transition: 0.2s linear;
+}
+
+
+ .salesTable{
+    margin: 5px;
+    width: 80%;
+    position: relative;
+    top: 100px;
+    margin-left: auto;
+    margin-right: auto; 
+ }
+
+ /* JavaScript content */
+ /* Fixed Content */
+
+
+
+
+#salesForm{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    background-color: rgb(227, 252, 0);
+    border-radius: 10%;
+    width: 50%;
+    height: 241px;
+    position: relative;
+    top: 100px;
+    left: 281px;
+}
+
+tr:hover{
+    color: rgb(255, 102, 0);
+    background-color: rgb(0, 248, 248);
+ }
+
+table , tr , th, td{
+    border: 1px solid black;
+    border-collapse: collapse; 
+ }
+ th{
+     font-weight: bold;
+     font-family:'Chango', cursive;
+     color: rgb(255, 38, 0);
+ }
+/* //////////////////////////////////////////////////////////////////////// */
+ /* Dynamic content */
+legend{
+    color: rgb(255, 0, 0);
+    padding: 5px;
+    background-color: rgb(206, 142, 142);
+    border-radius: 15%;
+}
+#submito{
+    position: relative;
+    left: 523px;
+    top: -145px;
+    width: 119px;
+    height: 75px;
+    font-size: 2rem;
+    font-family: Chango;
+    color: red;
+    background-color: rgb(227, 252, 0);
+    border: none;
+}
+#submito:hover{
+    cursor: pointer;
+    background-color: rgb(0, 255, 64);
+    transition: 2000ms;
+}
+
+#location{
+    position: relative;
+    left: 214px;
+}
+#miniCust{
+    position: relative;
+    left: 122px;
+}
+#maxCust{
+    position: relative;
+    left: 117px;
+}
+#averageSales{
+    position: relative;
+}
+
+legend{
+    ;
+}

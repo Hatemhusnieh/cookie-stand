@@ -1,0 +1,180 @@
+/* index page CSS */
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+body{
+    background-image: url(../img/salmon.png);
+    background-repeat: no-repeat;
+    background-position: 400px 5px;
+    background-size: 38%;
+    background-color: black;
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    position: fixed; 
+    z-index: 200; 
+}
+.nav-scroll{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    position: fixed;
+    z-index: 200; 
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 1px 10px rgb(255, 102, 0);
+}
+#mainHeader{
+    width: fit-content;
+    height: fit-content;
+    font-size: 3rem;
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 5px;
+    color: rgb(255, 102, 0);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 169px;
+}
+
+#logo{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+#logo img{
+    width: 55px;
+    height: 55px;
+}
+#logo h4{
+    position: relative;
+    top: 19px;
+    font-family: 'Ranchers', cursive;
+    color: rgb(255, 102, 0);
+}
+
+/* navigation bar */
+
+nav{
+    color: rgb(255, 102, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: fit-content;
+    float: right;
+    position: relative;
+    top: -51px;
+    left: auto;
+    right: 10px;
+    font-size: 16pt
+}
+
+ nav ul{
+    list-style: none;
+    display: flex;
+ }
+nav li{
+    margin: 13px;
+}
+ li a{
+    text-decoration: none;
+    color: rgb(255, 102, 0);
+    cursor: pointer;
+}
+li:hover{
+    list-style-type: "\1F449";
+}
+li a:hover{
+    background-color: rgb(255, 102, 0);
+    color: white;
+    border-radius: 6px;
+    transition: 0.2s linear;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+/* main */
+
+main{
+    width: 100%; 
+    max-width: 100%;
+}
+
+#service-container{
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+    top: 227px;
+    box-sizing: border-box;
+}
+
+.service{
+    width: 500px;
+    height: 500px;
+    margin: 5px 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    border: 2px solid rgb(255, 102, 0);
+    border-radius: 6px;
+    text-align: center;
+    color: rgb(255, 102, 0);
+    padding: 10px;
+    animation: pulse 1s infinite ;
+}
+
+@keyframes pulse{
+    0%{border: 2px solid rgb(255, 102, 0)}
+    100%{border: 2px solid rgb(230, 247, 3)}
+}
+.service h3{
+    height: fit-content;
+    color: rgb(255, 102, 0);
+    font-size: 20pt;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+.service p{
+    height: fit-content;
+    color: rgb(255 255 255);
+    font-size: 18pt;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+.images{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+}
+.images img{
+    margin: 3px 3px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+#family img{}
+#desert img{
+    width: 232px;
+    height: 232px;
+}
+#products img{
+    width: 232px;
+    height: 232px;
+}
+#types img{
+    width: 232px;
+    height: 187px;
+}

@@ -1,4 +1,20 @@
 'use strict';
+
+
+'use strict';
+
+window.addEventListener('scroll', ()=>{
+  let header = document.querySelector('header');
+  let logo = document.querySelector('img');
+  //   console.log(header);
+  header.classList.toggle('nav-scroll',window.scrollY>0);
+  //   console.log(logo);
+  if(window.scrollY > 0){
+    logo.src = '../img/logo2.jpg';
+  }if (window.scrollY === 0) {
+    logo.src = '../img/logo.png';
+  }
+});
 // defining shared operating hours
 const operatingHours = [6,7,8,9,10,11,12,1,2,3,4,5,6,7,8];
 // creating a variable to hold new object that user add

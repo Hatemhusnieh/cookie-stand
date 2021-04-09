@@ -5,39 +5,84 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/syle.css">
+    <link rel="stylesheet" href="./CSS/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
 </head>
-<body id="bodyMain">
-    <header id="headerMain">
-        <!-- name of the Brand and their logo and preferred picture -->
-        <div id="mainHeader">
-            <h1>Pat’s Salmon Cookies</h1>
+
+<body>
+
+    <header>
+
+        <div id="logo">
+            <img src="./img/logo.png" alt="logo">
+            <h4>Pat’s Salmon Cookies</h4>
         </div>
-        <div id="logo"><img src="./img/logo.png" alt="logo"></div>
-        <!-- navigation bar(vertical display) -->
-    </header>
-    <main>
         <nav>
+            
             <ul>
-                <li id="reach"><a href="./reach-us.html">Reach us</a></li>
-                <li id="operating"><a href="./operating.html">Operating hours</a></li>
-                <li id="conatct"><a href="./conatc.html">contact us</a></li>
-                <li><a href="./sales.html" id="link">Our Sales</a></li>
+                <li><a href="./pages/reach-us.html">Reach us</a></li>
+                <li><a href="./pages/operating.html">Operating hours</a></li>
+                <li><a href="./pages/contact.html">contact us</a></li>
+                <li><a href="./pages/sales.html" id="link">Our Sales</a></li>
             </ul>
         </nav>
-        <!-- box for pictures the owner want at his main page -->
-        <div class="images">
-            <img src="./img/cutter.jpeg" alt="cutter" id="cutter">
-            <img src="./img/fish.jpg" alt="fish" id="fish">
-            <img src="./img/frosted-cookie.jpg" alt="frosted-cookie" id="frosted-cookie">
-            <img src="./img/family.jpg" alt="family" id="family">
-            <img src="./img/shirt.jpg" alt="shirt" id="shirt">
-            <img src="./img/salmon.png" alt="salmon" id="salmon">
-            <img src="./img/chinook.jpg" alt="chinook" id="chinook">
+    </header>
+    <div id="mainHeader">
+        <h1>Pat’s Salmon Cookies</h1>
+    </div>
+    <main>
+
+        <div id="service-container">
+
+            <div class="service" id="family">
+                <h3>A place that embrace families</h3>
+                <div class="images">
+                    <img src="./img/family.jpg" alt="family">
+                </div>
+                <p>Family is the most valuable thing in life. At Pat's Salmon Cookies,
+                   we made sure the our place is always comfortable for families  
+                </p>
+            </div>
+
+            <div class="service" id="desert">
+                <h3>Style you favorite desert!</h3>
+                <div class="images">
+                    <img src="./img/frosted-cookie.jpg" alt="family">
+                    <img src="./img/fish.jpg" alt="fish">
+                </div>
+                <p>At Pat's Salmon Cookies, we offer the widest range of looks for our cookies.
+                    We promise to fit your taste!  
+                </p>
+            </div>
+
+            <div class="service" id="products">
+                <h3>Looking for Salmons products?</h3>
+                <div class="images">
+                    <img src="./img/cutter.jpeg" alt="cutter">
+                    <img src="./img/shirt.jpg" alt="shirt"> 
+                </div>
+                <p>At Pat's Salmon Cookies, we are careful not let you out without a memorial from our stores    
+                </p>
+            </div>
+
+            <div class="service" id="types">
+                <h3>We have it all!</h3>
+                <div class="images">
+                    <img src="./img/chinook.jpg" alt="chinook">
+                    <img src="./img/butter.jpg" alt="butter">
+                    <img src="./img/porgy.jpg" alt="porgy">
+                    <img src="./img/bored.jpg" alt="bored">
+                </div>
+                <p>You don't like Salmon? Don't worry. we have more than 100 type of fishes that will surly impress you 
+                </p>
+            </div>
+
         </div>
+
     </main>
+
     <footer></footer>
+    <script src="./JS/main.js"></script>
 </body>
 </html>
