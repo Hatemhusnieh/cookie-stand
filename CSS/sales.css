@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+body{
+    background-image: url(../img/salmon.png);
+    background-repeat: no-repeat;
+    background-position: 400px 74px;
+    background-size: 38%;
+    background-color: black;
+}
 /* Header */
 header{
     top: 0px;
@@ -51,7 +63,7 @@ nav{
     font-size: 16pt
 }
 
- nav ul{
+nav ul{
     list-style: none;
     display: flex;
  }
@@ -73,91 +85,120 @@ li a:hover{
     transition: 0.2s linear;
 }
 
-
- .salesTable{
+/* ////////////////////////////////////////////////////////////////////// */
+/* Table style */
+.salesTable{
     margin: 5px;
-    width: 80%;
-    position: relative;
-    top: 100px;
-    margin-left: auto;
-    margin-right: auto; 
- }
-
- /* JavaScript content */
- /* Fixed Content */
-
-
-
-
-#salesForm{
-    font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: brown;
-    background-color: rgb(227, 252, 0);
-    border-radius: 10%;
-    width: 50%;
-    height: 241px;
-    position: relative;
-    top: 100px;
-    left: 281px;
-}
-
-tr:hover{
-    color: rgb(255, 102, 0);
-    background-color: rgb(0, 248, 248);
- }
-
-table , tr , th, td{
-    border: 1px solid black;
-    border-collapse: collapse; 
- }
- th{
-     font-weight: bold;
-     font-family:'Chango', cursive;
-     color: rgb(255, 38, 0);
- }
-/* //////////////////////////////////////////////////////////////////////// */
- /* Dynamic content */
-legend{
-    color: rgb(255, 0, 0);
+    width: fit-content;
     padding: 5px;
-    background-color: rgb(206, 142, 142);
-    border-radius: 15%;
+    position: relative;
+    top: 266px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+table{
+    border: 3px solid rgb(255, 102, 0);
+    border-radius: 5px;
+    border-collapse: unset;
+    text-align: center;
+    cursor: pointer;
+ }
+th,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px; 
+ }
+th{
+    font-size: 12pt;
+    font-family: 'New Tegomin', serif;
+    font-weight: 600;
+ }
+td{
+    font-family: 'Kiwi Maru', serif;
+}
+#tableFooter{
+    font-weight: bold;
+}
+td:last-child{
+    font-weight: bold;
+}
+tr:nth-child(odd){
+    background-color: rgb(253 245 245);
+}
+tr:nth-child(even){
+    background-color: rgb(16, 240, 217);
+}
+tr:hover{
+    background-color: rgb(255, 102, 0);
+    color: #fff;
+    transform: scale(1.05); 
+}
+td:hover{
+    font-size: 16pt;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+/* Form style */
+#salesForm{
+    display: block;
+    box-sizing: border-box;
+    width: fit-content;
+    position: relative;
+    top: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    color: rgb(255, 102, 0);
+}
+fieldset{
+    border: thick double;
+    border-radius: 6px;
+    padding: 10px;
+}
+legend{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+#lables{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10pt;
+    color: #fff;
+    font-weight: bold;
 }
 #submito{
-    position: relative;
-    left: 523px;
-    top: -145px;
-    width: 119px;
-    height: 75px;
-    font-size: 2rem;
-    font-family: Chango;
-    color: red;
-    background-color: rgb(227, 252, 0);
-    border: none;
-}
-#submito:hover{
+    background-color: rgb(255, 102, 0);
+    color: #fff;
+    font-size: 14pt;
+    border-radius: 6px;
     cursor: pointer;
-    background-color: rgb(0, 255, 64);
-    transition: 2000ms;
+    position: relative;
+    left: 5px;
+    width: 50px;
+    height: 30px;
+    font-family: 'Lobster', cursive;
+}
+label{
+    padding-right: 5px;
 }
 
-#location{
+#reset{
     position: relative;
-    left: 214px;
+    top: 264px;
+    left: 60px;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 16pt;
+    cursor: pointer;
 }
-#miniCust{
-    position: relative;
-    left: 122px;
+#reset:hover{
+    animation: pulse 300ms linear infinite;
 }
-#maxCust{
-    position: relative;
-    left: 117px;
-}
-#averageSales{
-    position: relative;
-}
-
-legend{
-    ;
+@keyframes pulse{
+    0%{background-color:red}
+    100%{background-color:rgb(230, 247, 3)}
 }

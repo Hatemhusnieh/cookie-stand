@@ -29,27 +29,29 @@
     </header>
 
     <main class="salesPage">
-        <div id='body'></div>
-    </main>
 
-    <footer>
-        
+        <div id='body'></div>
+
         <form id="salesForm">
             <fieldset>
                 <legend>Pats Salmon Cookies</legend>
-                <label for="location">Location:</label>
-                    <input type="text" name="location" id="location" required="required" placeholder="ex: Amman"> <br><br>
-                <label for="miniCust">Minimum Visitors:</label>
-                    <input type="number" name="miniCust" id="miniCust" min="0" required="required" placeholder="ex: 4"><br><br>
-                <label for="maxCust">Maximum Visitors:</label>
-                    <input type="number" name="maxCust" id="maxCust" min="0" required="required" placeholder="ex: 666"><br><br>
-                <label for="averageSales">Average Sales per Customer:</label>
-                    <input type="number" name="averageSales" id="averageSales" min="1" step="any" required="required" placeholder="ex:6.6"> <br><br>
-                <input type="submit" value="Add" id="submito">
+                <div id="lables">
+                    <label for="location">Location: </label>
+                        <input type="text" name="location" id="location" required="required" placeholder="ex: Amman"> <br><br>
+                    <label for="miniCust">Minimum Visitors: </label>
+                        <input type="number" name="miniCust" id="miniCust" min="0" required="required" placeholder="ex: 4"><br><br>
+                    <label for="maxCust">Maximum Visitors: </label>
+                        <input type="number" name="maxCust" id="maxCust" min="0" required="required" placeholder="ex: 666"><br><br>
+                    <label for="averageSales">Average Sales per Customer: </label>
+                        <input type="number" name="averageSales" id="averageSales" min="1" step="any" required="required" placeholder="ex:6.6"> <br><br>
+                    <input type="submit" value="Add" id="submito">
+                </div>
             </fieldset>
         </form>
+        <button id="reset">RESET</button>
+    </main>
 
-    </footer>
+    <footer></footer>
     <script src="../JS/app.js"></script>
 </body>
 </html>
